@@ -24,7 +24,7 @@
   <body>
     <main>
       <!-- Rating state start -->
-      <div>
+      <div class="rating-state">
         <img src="images/icon-star.svg" alt="icon star" class="star-icon" />
         <h2 class="feedback-heading">How did we do?</h2>
         <p class="feedback-text">
@@ -44,11 +44,19 @@
       <!-- Rating state end -->
 
       <!-- Thank you state start -->
-
-      You selected
-      <!-- Add rating here -->
-      out of 5 Thank you! We appreciate you taking the time to give a rating. If
-      you ever need more support, don’t hesitate to get in touch!
+      <div class="thank-you-state">
+        <img src="images/illustration-thank-you.svg" alt="thank you image" />
+        <p class="rating-result">
+          You selected
+          <span id="final-rating"></span>
+          out of 5
+        </p>
+        <h2>Thank you!</h2>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </div>
 
       <!-- Thank you state end -->
     </main>
