@@ -24,7 +24,7 @@
   <body>
     <main>
       <!-- Rating state start -->
-      <div class="rating-state">
+      <div class="container rating-state">
         <div class="mb-stn circular-bg">
           <img src="images/icon-star.svg" alt="icon star" class="star-icon" />
         </div>
@@ -34,11 +34,11 @@
           is appreciated to help us improve our offering!
         </p>
         <div class="mb-stn ratings">
-          <div class="circular-bg">1</div>
-          <div class="circular-bg">2</div>
-          <div class="circular-bg">3</div>
-          <div class="circular-bg">4</div>
-          <div class="circular-bg">5</div>
+          <div id="rating-one" class="rating circular-bg">1</div>
+          <div id="rating-two" class="rating circular-bg">2</div>
+          <div id="rating-three" class="rating circular-bg">3</div>
+          <div id="rating-four" class="rating circular-bg">4</div>
+          <div id="rating-five" class="rating circular-bg">5</div>
         </div>
         <!-- TODO: Pending button UI state (fake timeout before swapping to thank you state) -->
         <button class="submit-rating">SUBMIT</button>
@@ -46,15 +46,19 @@
       <!-- Rating state end -->
 
       <!-- Thank you state start -->
-      <div class="thank-you-state">
-        <img src="images/illustration-thank-you.svg" alt="thank you image" />
-        <p class="rating-result">
+      <div class="container thank-you-state">
+        <img
+          class="mb-stn"
+          src="images/illustration-thank-you.svg"
+          alt="thank you image"
+        />
+        <p class="mb-stn rating-result">
           You selected
           <span id="final-rating"></span>
           out of 5
         </p>
-        <h2>Thank you!</h2>
-        <p>
+        <h2 class="mb-stn">Thank you!</h2>
+        <p class="mb-stn thank-you-message">
           We appreciate you taking the time to give a rating. If you ever need
           more support, don’t hesitate to get in touch!
         </p>
