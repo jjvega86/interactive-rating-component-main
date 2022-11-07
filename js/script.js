@@ -13,7 +13,7 @@ function removeActiveStates() {
   let updatedRatings = document.getElementsByClassName(`rating`);
   for (let i = 0; i < updatedRatings.length; i++) {
     if (updatedRatings[i].className.includes("rating-active")) {
-      updatedRatings[i].className = "rating circular-bg";
+      updatedRatings[i].className = "rating";
       break;
     }
   }

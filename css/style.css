@@ -57,8 +57,8 @@ footer {
   align-items: center;
   background-color: var(--dark-blue);
   border-radius: 50%;
-  height: 2.5rem;
-  width: 2.5rem;
+  height: 50px;
+  width: 50px;
 }
 
 .mb-stn {
@@ -76,7 +76,7 @@ footer {
 
 .ratings {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   padding: 0 0.5rem 0 0.5rem;
   gap: 2rem;
   color: var(--medium-grey);
@@ -84,6 +84,12 @@ footer {
 
 .rating {
   cursor: pointer;
+  border-radius: 50%;
+  width: 20px;
+  height: 16px;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--dark-blue);
 }
 
 .rating:hover {
