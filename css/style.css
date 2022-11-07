@@ -122,19 +122,28 @@ footer {
   background-color: var(--white);
 }
 
-.thank-you-state {
-  display: none;
+.hidden {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.thank-you-active {
+  transition: opacity 2s ease-in;
+  opacity: 1;
+  height: auto;
   text-align: center;
 }
 
 .rating-result {
   color: var(--orange);
+  text-align: center;
   border-radius: 500px;
   background-color: var(--dark-blue);
   width: 60%;
   margin: 1rem auto;
   margin-bottom: 1.75rem;
-  padding: 0.75rem;
+  padding: 0.5rem;
 }
 
 .thank-you-message {

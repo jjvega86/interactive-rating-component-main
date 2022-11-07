@@ -21,13 +21,13 @@ function removeActiveStates() {
 
 function submitRating(e) {
   let ratingState = document.querySelector(".rating-state");
-  let thankYouState = document.querySelector(".thank-you-state");
+  let thankYouState = document.querySelector(".hidden");
   let finalRating = document.querySelector(".rating-active");
   if (!finalRating) return;
   let ratingPill = document.querySelector("#final-rating");
   ratingPill.textContent = finalRating.textContent;
   ratingState.style.display = "none";
-  thankYouState.style.display = "block";
+  thankYouState.className = "container thank-you-active";
 }
 
 for (let i = 0; i < ratings.length; i++) {
